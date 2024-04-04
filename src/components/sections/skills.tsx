@@ -1,12 +1,15 @@
+'use client';
 import { TECHNOLOGIES } from '@/lib/data';
 import Tag from '@/components/data-display/tag';
 import TechDetails from '@/components/data-display/tech-details';
 import Typography from '@/components/general/typography';
 import Container from '@/components/layout/container';
+import { useSectionInView } from '@/lib/hooks';
 
 const SkillsSection = () => {
+  const { ref } = useSectionInView("Skills");
   return (
-    <Container>
+    <Container id="skills" ref={ref}>
       <div className="flex flex-col items-center gap-4">
         <div className="self-center">
           <Tag label="Skills" />

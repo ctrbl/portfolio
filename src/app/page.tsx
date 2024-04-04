@@ -1,21 +1,19 @@
-import HeroSection from '@/components/sections/hero';
+import HomeSection from '@/components/sections/home';
 import ContactSection from '@/components/sections/contact';
 import AboutMeSection from '@/components/sections/about-me';
 import SkillsSection from '@/components/sections/skills';
 import ExperienceSection from '@/components/sections/experiences';
-import TestimonialsSection from '@/components/sections/testimonials';
-import WorkSection from '@/components/sections/work';
+import ProjectSection from '@/components/sections/projects';
 
 export default function Home() {
   return (
-    <>
-      <HeroSection />
+    <main className="flex flex-col items-center px-5">
+      <HomeSection />
       <AboutMeSection />
       <SkillsSection />
       <ExperienceSection />
-      <WorkSection />
-      <TestimonialsSection />
+      <ProjectSection />
       <ContactSection />
-    </>
+    </main>
   );
 }

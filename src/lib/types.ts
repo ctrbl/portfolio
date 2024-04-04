@@ -1,4 +1,7 @@
 import type { StaticImageData } from 'next/image';
+import { NAV_LINKS } from '@/lib/data';
+
+export type SectionName = (typeof NAV_LINKS)[number]['label'];
 
 export type TechDetails = {
   logo: string | StaticImageData;
@@ -24,11 +27,4 @@ export type ProjectDetails = {
   url: string;
   previewImage: string | StaticImageData;
   technologies: string[];
-};
-
-export type TestimonialDetails = {
-  personName: string;
-  personAvatar?: string | StaticImageData;
-  testimonial: string;
-  title: string;
 };

@@ -1,4 +1,4 @@
-import { Github, Twitter, Figma } from 'lucide-react';
+import { Github, Linkedin, CodeIcon } from 'lucide-react';
 
 import LogoJavascript from '/public/images/logos/icon-javascript.svg';
 import LogoTypescript from '/public/images/logos/icon-typescript.svg';
@@ -30,18 +30,14 @@ import ProjectFiskil from '/public/images/project-fiskil.png';
 import ProjectWingie from '/public/images/project-wingie.png';
 import ProjectPepehousing from '/public/images/project-pepehousing.png';
 
-import AvatarKrisztian from '/public/images/avatar-krisztian.png';
-import AvatarEugen from '/public/images/avatar-eugen.png';
-import AvatarDummy from '/public/images/avatar-dummy.svg';
-
 import {
   ExperienceDetails,
   ProjectDetails,
   TechDetails,
-  TestimonialDetails,
 } from '@/lib/types';
 
 export const EXTERNAL_LINKS = {
+  GATECH: 'https://omscs.gatech.edu/',
   GITHUB: 'https://github.com/shahsagarm',
   GITHUB_REPO: 'https://github.com/shahsagarm/sagarshah.dev',
   TWITTER: 'https://twitter.com/shahsagarm',
@@ -52,16 +48,24 @@ export const EXTERNAL_LINKS = {
 
 export const NAV_LINKS = [
   {
+    label: 'Home',
+    href: '#home',
+  },
+  {
     label: 'About',
     href: '#about',
   },
   {
-    label: 'Work',
-    href: '#work',
+    label: 'Skills',
+    href: '#skills',
   },
   {
-    label: 'Testimonials',
-    href: '#testimonials',
+    label: 'Experience',
+    href: '#experience',
+  },
+  {
+    label: 'Projects',
+    href: '#projects',
   },
   {
     label: 'Contact',
@@ -71,16 +75,16 @@ export const NAV_LINKS = [
 
 export const SOCIAL_LINKS = [
   {
+    icon: Linkedin,
+    url: 'https://www.linkedin.com/in/ctrbl/',
+  },
+  {
     icon: Github,
-    url: 'https://github.com/shahsagarm',
+    url: 'https://github.com/ctrbl',
   },
   {
-    icon: Twitter,
-    url: 'https://twitter.com/shahsagarm',
-  },
-  {
-    icon: Figma,
-    url: 'https://www.figma.com/@shahsagarm',
+    icon: CodeIcon,
+    url: 'https://devpost.com/minhchau-ng1028?ref_content=user-portfolio&ref_feature=portfolio&ref_medium=global-nav',
   },
 ];
 
@@ -197,6 +201,21 @@ export const EXPERIENCES: ExperienceDetails[] = [
       'Handled sprint planning & task distribution.',
     ],
   },
+    {
+    logo: LogoGreenApex,
+    darkModeLogo: LogoGreenApexLight,
+    logoAlt: 'Greenapex logo',
+    position: 'Team Lead',
+    startDate: new Date(2017, 6),
+    endDate: new Date(2021, 9),
+    summary: [
+      'Acted as team lead in different projects.',
+      'Brainstormed new ideas & gathered requirements for internal projects.',
+      'Designed architecture of different projects (frontend + backend).',
+      'Worked on enterprise-level projects for a variety of clients.',
+      'Handled sprint planning & task distribution.',
+    ],
+  },
   {
     logo: LogoDotnpixel,
     darkModeLogo: LogoDotnpixelLight,
@@ -263,29 +282,5 @@ export const PROJECTS: ProjectDetails[] = [
       'React Query',
       'Storybook',
     ],
-  },
-];
-
-export const TESTIMONIALS: TestimonialDetails[] = [
-  {
-    personName: 'Krisztian Gyuris',
-    personAvatar: AvatarKrisztian,
-    title: 'Founder - inboxgenie.io',
-    testimonial:
-      'Job well done! I am really impressed. He is very very good at what he does:) I would recommend Sagar and will rehire in the future for Frontend development.',
-  },
-  {
-    personName: 'Eugen Esanu',
-    personAvatar: AvatarEugen,
-    title: 'Founder - shosho.design',
-    testimonial:
-      'Great guy, highly recommended for any COMPLEX front-end development job! His skills are top-notch and he will be an amazing addition to any team.',
-  },
-  {
-    personName: 'Joe Matkin',
-    personAvatar: AvatarDummy,
-    title: 'Freelancer',
-    testimonial:
-      'Sagar was extremely easy and pleasant to work with and he truly cares about the project being a success. Sagar has a high level of knowledge and was able to work on my MERN stack application without any issues.',
   },
 ];

@@ -11,6 +11,7 @@ import Typography from '@/components/general/typography';
 import Container from '@/components/layout/container';
 import useWindowSize from '@/hooks/use-window-size';
 import { copyTextToClipboard } from '@/lib/utils';
+import { useSectionInView } from "@/lib/hooks";
 
 let email = 'reachsagarshah@gmail.com';
 let phone = '+91 8980500565';
@@ -18,6 +19,7 @@ let phone = '+91 8980500565';
 type CopyValue = 'email' | 'phone';
 
 const ContactSection = () => {
+  const { ref } = useSectionInView("Contact");
   const { width } = useWindowSize();
   const [isCopied, setIsCopied] = useState(false);
   const [copiedValueType, setCopiedValueType] = useState<CopyValue | null>(
@@ -42,7 +44,7 @@ const ContactSection = () => {
   };
 
   return (
-    <Container id="contact">
+    <Container id="contact" ref={ref}>
       <div className="flex flex-col items-center gap-4">
         <div className="self-center">
           <Tag label="Get in touch" />
