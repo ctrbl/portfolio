@@ -38,7 +38,7 @@ const AboutMeSection = () => {
           <div className="flex flex-col max-w-xl gap-6">
             <Typography>
               After graduating with a B.S. in Computer Science in December 2023 🎓, 
-              I'm currently a graduate student pursuing a {" "}
+              I&apos;m currently a graduate student pursuing a {" "}
               <span className="font-medium">M.S. in Computer Science </span> 
               specializing in {" "}
               <span className="font-medium">Machine Learning </span>at USF. I will soon be transferring to the {" "}
@@ -53,7 +53,7 @@ const AboutMeSection = () => {
             </Typography>
             <Typography>
               Throughout my academic journey, undergraduate research assistance, internship, and hackathons participation,
-              I've gained a robust expertise in {" "}
+              I&apos;ve gained a robust expertise in {" "}
               <span className="font-medium">full-stack web and mobile app development </span>
               utilizing modern technologies like {" "}
               <span className="italic">React.js, TypeScript, SQL, AWS, Swift, and more. </span>
