@@ -32,10 +32,10 @@ const HomeSection = () => {
             <Typography variant="h3">
               Hello, I&apos;m&nbsp;
             </Typography>
-            {/* <Typography variant="h1"> */}
+            <Typography variant="h1">
               Chau Nguyen{' '}
               <WavingHand>👋</WavingHand>
-            {/* </Typography> */}
+            </Typography>
             <Typography variant="h3">
               <TypeAnimation
                 sequence={[
