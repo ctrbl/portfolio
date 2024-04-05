@@ -13,8 +13,8 @@ import useWindowSize from '@/hooks/use-window-size';
 import { copyTextToClipboard } from '@/lib/utils';
 import { useSectionInView } from "@/lib/hooks";
 
-let email = 'reachsagarshah@gmail.com';
-let phone = '+91 8980500565';
+let email = 'minhchau.ng1028@gmail.com';
+let phone = '+1 (813) 367-6834';
 
 type CopyValue = 'email' | 'phone';
 

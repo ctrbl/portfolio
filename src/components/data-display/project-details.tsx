@@ -21,7 +21,7 @@ const ProjectDetails = ({
   layoutType = 'default',
 }: ProjectDetailsProps) => {
   return (
-    <Card className="mx-auto flex w-full max-w-6xl flex-col md:flex-row">
+    <Card className="glowing-border-light mx-auto flex w-full max-w-6xl flex-col md:flex-row">
       {/* Image */}
       <div
         className={mergeClasses(

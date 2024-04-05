@@ -3,6 +3,7 @@ import Image from 'next/image';
 
 import ChauFullShot from '/public/images/chau-full-shot.jpg';
 import Tag from '@/components/data-display/tag';
+import Card from '@/components/layout/card'; 
 import Container from '@/components/layout/container';
 import Typography from '@/components/general/typography';
 import Link from '@/components/navigation/link';
@@ -11,7 +12,7 @@ import { useSectionInView } from "@/lib/hooks";
 import SectionDivider from '../general/section-divider';
 
 const AboutMeSection = () => {
-  const { ref } = useSectionInView("About", 0.65);
+  const { ref } = useSectionInView("About", 0.4);
 
   return (
     <Container id="about" ref={ref} className="w-screen bg-translucent">
@@ -21,9 +22,9 @@ const AboutMeSection = () => {
           <Typography variant="section">About Me</Typography>
         </div>
 
-        <div className="flex w-full flex-col items-center justify-center gap-20 md:flex-row">
+        <div className="flex w-full flex-col items-center justify-center gap-12 gap-20 md:flex-row">
           {/* Image */}
-          <div className="relative h-[30vh] w-[30vh] md:h-[350px] md:w-[350px] overflow-hidden rounded-[25px]">
+          <div className="relative h-[30vh] w-[30vh] md:h-[360px] md:w-[360px] overflow-hidden rounded-[25px]">
             <Image
               src={ChauFullShot}
               alt="Fullshot of Chau"
@@ -35,9 +36,9 @@ const AboutMeSection = () => {
           </div>
 
           {/* Content */}
-          <div className="flex flex-col max-w-xl gap-6">
+          <div className="flex flex-col w-full max-w-xl gap-6">
             <Typography>
-              After graduating with a B.S. in Computer Science in December 2023 🎓, 
+              Graduated with a B.S. in Computer Science in December 2023 🎓, 
               I&apos;m currently a graduate student pursuing a {" "}
               <span className="font-medium">M.S. in Computer Science </span> 
               specializing in {" "}
@@ -49,12 +50,13 @@ const AboutMeSection = () => {
               >
                 OMSCS program at Georgia Tech
               </Link>{' '}
-              👩🏻‍💻 in Fall 2024. 
+              in Fall 2024. With this flexibility, I&apos;m currently looking for a {" "}
+              <span className="font-medium">full-time entry-level SWE position 👩🏻‍💻 </span>. 
             </Typography>
             <Typography>
               Throughout my academic journey, undergraduate research assistance, internship, and hackathons participation,
               I&apos;ve gained a robust expertise in {" "}
-              <span className="font-medium">full-stack web and mobile app development </span>
+              <span className="font-medium">full-stack software development ✨ </span>
               utilizing modern technologies like {" "}
               <span className="italic">React.js, TypeScript, SQL, AWS, Swift, and more. </span>
             </Typography>
@@ -67,8 +69,10 @@ const AboutMeSection = () => {
           </div>
         </div>
 
-        <SectionDivider></SectionDivider>
-        <Typography variant="section">Education</Typography>
+        {/* <SectionDivider></SectionDivider> */}
+
+        {/* <Typography variant="section">Highlights</Typography>
+        <Card className="glowing-border">Hello</Card> */}
       </div>
     </Container>
   );

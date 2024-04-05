@@ -1,6 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@property --gradient-angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false; 
+}
 
 /* Ref :: https://twitter.com/steventey/status/1677339375645126659 */
 :root {
@@ -16,6 +21,9 @@
   --app-gray-800: 31 41 55;
   --app-gray-900: 17 24 39;
   --app-gray-950: 3 7 18;
+
+  --app-blue: rgba(166, 193, 238, 0.45); 
+  --app-pink: rgba(251, 194, 235, 0.45); 
 }
 
 /* .dark {
@@ -34,10 +42,69 @@
 } */
 
 body {
-  background-color: #efeefb;
   background-image: linear-gradient(315deg, #efeefb 30%, #ffeff4 70%, #ffffff 100%);
 }
 
 .bg-translucent {
   background-color: rgba(249, 250, 251, 0.5); 
+}
+
+@keyframes rotation {
+  0% {
+    --gradient-angle: 0deg;
+  }
+  100% {
+    --gradient-angle: 360deg;
+  }
+}
+
+.glowing-border {
+  content: "";
+  position: relative;
+}
+
+.glowing-border:focus::before,
+.glowing-border:focus::after,
+.glowing-border:hover::before,
+.glowing-border:hover::after {
+  content: "";
+  position: absolute;
+  inset: -0.35rem; 
+  z-index: -1; 
+  background: conic-gradient(from var(--gradient-angle), #a6c1ee, #fbc2eb, #ffffff, #fbc2eb, #a6c1ee);
+  border-radius: inherit; 
+  animation: rotation 4s linear infinite; 
+}
+
+.glowing-border::after {
+  filter: blur(35px);
+}
+
+.glowing-border-light {
+  content: "";
+  position: relative;
+}
+
+.glowing-border-light:focus::before,
+.glowing-border-light:focus::after,
+.glowing-border-light:hover::before,
+.glowing-border-light:hover::after {
+  content: "";
+  position: absolute;
+  inset: -0.35rem; 
+  z-index: -1; 
+  background: conic-gradient(
+    from var(--gradient-angle), 
+    var(--app-blue),
+    var(--app-pink), 
+    #ffffff, 
+    var(--app-pink), 
+    var(--app-blue)
+  );
+  border-radius: inherit; 
+  animation: rotation 4s linear infinite; 
+}
+
+.glowing-border-light::after {
+  filter: blur(35px);
 }

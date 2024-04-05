@@ -13,7 +13,7 @@ const WavingHand: React.FC<WavingHandProps> = ({ children }) => {
 
       setTimeout(() => {
         hand.classList.remove('animate-waving-hand');
-      }, 2250); // Adjust the time (in milliseconds) to match the duration of your animation
+      }, 2000); // Adjust the time (in milliseconds) to match the duration of your animation
 
       hand.addEventListener('mouseover', handleMouseOver);
       hand.addEventListener('mouseout', handleMouseOut);

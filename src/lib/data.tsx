@@ -20,15 +20,16 @@ import LogoCypressLight from '/public/images/logos/icon-cypress-light.svg';
 import LogoStorybook from '/public/images/logos/icon-storybook.svg';
 import LogoGit from '/public/images/logos/icon-git.svg';
 
-import LogoUpwork from '/public/images/logos/logo-upwork.svg';
+import LogoTaperk from '/public/images/logos/logo-taperk.png';
 import LogoGreenApex from '/public/images/logos/logo-greenapex.svg';
 import LogoGreenApexLight from '/public/images/logos/logo-greenapex-light.svg';
 import LogoDotnpixel from '/public/images/logos/logo-dotnpixel.svg';
 import LogoDotnpixelLight from '/public/images/logos/logo-dotnpixel-light.svg';
 
-import ProjectFiskil from '/public/images/project-fiskil.png';
-import ProjectWingie from '/public/images/project-wingie.png';
-import ProjectPepehousing from '/public/images/project-pepehousing.png';
+import ProjectEmnet from '/public/images/project-emnet.png';
+import ProjectGOGO from '/public/images/project-gogo.png';
+import ProjectRebye from '/public/images/project-rebye.png';
+import ProjectRemindMe from '/public/images/project-remindme.png';
 
 import {
   ExperienceDetails,
@@ -176,111 +177,105 @@ export const TECHNOLOGIES: TechDetails[] = [
 
 export const EXPERIENCES: ExperienceDetails[] = [
   {
-    logo: LogoUpwork,
-    logoAlt: 'Upwork logo',
-    position: 'Independent Freelancer',
-    startDate: new Date(2021, 10),
-    currentlyWorkHere: true,
+    logo: LogoTaperk,
+    logoAlt: 'Taperk Logo',
+    position: 'Mobile Developer Intern',
+    startDate: new Date(2023, 8),
+    endDate: new Date(2023, 11),
+    // currentlyWorkHere: true,
     summary: [
-      'Worked for various clients like Fiskil, Shosho, Crowe MacKay LLP.',
-      'Worked with a variety of technologies, including React, Next.js, Typescript, Express.js, PostgreSQL, Tailwindcss, Mui, Firebase, Storybook, Cypress, and others.',
+      'Developed the front end for an iOS and instant app using Swift that redeems store points and rewards for customers via NFC tags and utilized back-end APIs to fetch and process JSON data.',
+      'Reduced the instant app size by 35% by refactoring the codebase and optimizing external libraries and media assets.',
+      'Conducted critical bug analysis by implementing manual testing, resulting in a 20% increase in overall performance.',
+      'Managed the deployment of the app on TestFlight for organization-wide distribution and comprehensive testing.'
     ],
   },
   {
     logo: LogoGreenApex,
     darkModeLogo: LogoGreenApexLight,
-    logoAlt: 'Greenapex logo',
-    position: 'Team Lead',
-    startDate: new Date(2017, 6),
-    endDate: new Date(2021, 9),
+    logoAlt: 'USF Logo',
+    position: 'Undergraduate Research Assistant',
+    startDate: new Date(2022, 12),
+    endDate: new Date(2023, 4),
     summary: [
-      'Acted as team lead in different projects.',
-      'Brainstormed new ideas & gathered requirements for internal projects.',
-      'Designed architecture of different projects (frontend + backend).',
-      'Worked on enterprise-level projects for a variety of clients.',
-      'Handled sprint planning & task distribution.',
+      'Collaborated with a team of 3 to fine-tune GPT-3.5 models using OpenAI API to generate questions about the user’s dietary intake, extract keywords from the dietary conversation, and generate a visualized nutrient intake dashboard.',
+      'Developed a cross-platform mobile app using Flutter with a conversational UI and a RESTful server-side API.',
     ],
-  },
-    {
-    logo: LogoGreenApex,
-    darkModeLogo: LogoGreenApexLight,
-    logoAlt: 'Greenapex logo',
-    position: 'Team Lead',
-    startDate: new Date(2017, 6),
-    endDate: new Date(2021, 9),
-    summary: [
-      'Acted as team lead in different projects.',
-      'Brainstormed new ideas & gathered requirements for internal projects.',
-      'Designed architecture of different projects (frontend + backend).',
-      'Worked on enterprise-level projects for a variety of clients.',
-      'Handled sprint planning & task distribution.',
-    ],
-  },
-  {
-    logo: LogoDotnpixel,
-    darkModeLogo: LogoDotnpixelLight,
-    logoAlt: 'Dotnpixel logo',
-    position: 'Full Stack Developer',
-    startDate: new Date(2015, 11),
-    endDate: new Date(2017, 4),
-    summary: ['Worked as a full stack developer (React / Laravel).'],
-  },
+  }
 ];
 
 export const PROJECTS: ProjectDetails[] = [
   {
-    name: 'Wingie',
+    name: 'em-net',
     description:
-      'A platform for comparing and finding affordable flights, as well as booking and purchasing tickets safely and easily in a few simple clicks.',
-    url: 'https://www.wingie.com',
-    previewImage: ProjectWingie,
+      'An iOS mobile app leveraging Solana blockchain technology to incentivize student engagement at USF campus events, fostering community connections and offering real-world rewards.',
+    url: 'https://devpost.com/software/em-sbkiw5',
+    previewImage: ProjectEmnet,
     technologies: [
-      'React',
-      'Typescript',
-      'React Bootstrap',
-      'Firebase',
-      'Express.js',
-      'PostgreSQL',
-      'Styled Components',
-      'Redux',
+      'Swift',
+      'Objective-C',
+      'Back-End Development',
+      'NLP',
+      'DiltilRoberta',
+      'Emotion Recognition',
+      'Solana',
+      'Blockchain',
+      'Python',
+      'REST API',
+      'Flask',
+      'SQLAlchemy',
+      'CockroachDB',
+      'Selenium',
     ],
   },
   {
-    name: 'Fiskil',
+    name: 'GOGO - Your AI Travel Planner',
     description:
-      'A platform for accessing real-time open banking and energy data to help you grow your business, backed with scalable back-end infrastructure.',
-    url: 'https://fiskil.com.au',
-    previewImage: ProjectFiskil,
+      'A cross-platform mobile app that generates personalized travel itineraries based on user\'s budget and preferences.',
+    url: 'https://devpost.com/software/gogo-your-ai-travel-planner',
+    previewImage: ProjectGOGO,
     technologies: [
-      'React',
-      'Next.js',
-      'Typescript',
-      'Tailwindcss',
+      'OpenAI',
+      'Flutter',
+      'Dart',
+      'Figma',
+      'Front-End Development',
+      'AWS',
+      'Google Cloud Platform',
+      'Google Maps API',
+      'Postman',
+    ],
+  },
+  {
+    name: 'Rebye',
+    description:
+      'An iOS consumer-to-consumer e-commerce mobile app that allows users to sell and buy items seamlessly.',
+    url: 'https://github.com/ctrbl/Rebye-App',
+    previewImage: ProjectRebye,
+    technologies: [
+      'Swift',
+      'Objective-C',
+      'Full-Stack Development',
+      'SQLite',
+      'Firebase',
+      'Stripe API',
+      'Figma',
+    ],
+  },
+  {
+    name: 'Remind Me',
+    description:
+      'A Chrome extension that reminds and notifies users to complete tasks on time.',
+    url: 'https://devpost.com/software/rem-nd-me',
+    previewImage: ProjectRemindMe,
+    technologies: [
+      'React.js',
+      'TypeScript',
+      'Bootstrap',
       'Material UI',
-      'Redux Toolkit',
-      'React Query',
-      'Express.js',
-      'PostgreSQL',
-      'Firebase',
-      'AWS Amplify',
-      'Cypress',
-      'Storybook',
-    ],
-  },
-  {
-    name: 'Pepehousing',
-    description:
-      'A platform for renting a flat or room in Poland. You may browse hundreds of verified deals, contact the vendor, and pay online in a simple and secure manner.',
-    url: 'https://pepehousing.com',
-    previewImage: ProjectPepehousing,
-    technologies: [
-      'React',
-      'Next.js',
-      'Typescript',
-      'Tailwindcss',
-      'Redux Toolkit',
-      'React Query',
-      'Storybook',
+      'Local Storage',
+      'Web Development',
+      'Figma',
     ],
   },
 ];

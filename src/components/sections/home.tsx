@@ -10,8 +10,7 @@ import { useSectionInView } from "@/lib/hooks";
 import { TypeAnimation } from "react-type-animation";
 
 const HomeSection = () => {
-  const { ref } = useSectionInView("Home", 0.5);
-
+  const { ref, inView } = useSectionInView("Home", 0.5);
   return (
     <section id="home" ref={ref} className="h-screen">
       <div className="flex flex-col items-center justify-center gap-12 md:flex-row md:py-12">
@@ -29,23 +28,25 @@ const HomeSection = () => {
         {/* Content */}
         <div className="flex max-w-3xl flex-grow flex-col items-center justify-center gap-8 md:order-first md:items-center md:justify-center 2xl:gap-12">
           <div className="flex flex-col gap-5 items-center">
-            <Typography variant="h3">
+            <Typography variant="h3" style={{ transform: 'translateY(5px)'}}>
               Hello, I&apos;m&nbsp;
             </Typography>
             <Typography variant="h1">
               Chau Nguyen{' '}
-              <WavingHand>👋</WavingHand>
+              {inView && <WavingHand>👋</WavingHand>}
             </Typography>
             <Typography variant="h3">
-              <TypeAnimation
-                sequence={[
-                  "Software Engineer",
-                  1000,
-                ]}
-                wrapper="span"
-                speed={50}
-                repeat={Infinity}
-              />
+              {inView && (
+                <TypeAnimation
+                  sequence={[
+                    "Software Engineer"
+                  ]}
+                  wrapper="span"
+                  speed={50}
+                  repeat={1}
+                  cursor={true}
+                />
+              )}
             </Typography>
           </div>
 
@@ -61,21 +62,22 @@ const HomeSection = () => {
 
           <div className="flex flex-row gap-5">
             <a
-              className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none hover:scale-105 transition cursor-pointer borderBlack dark:bg-white/10"
+              // className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none hover:scale-105 transition cursor-pointer borderBlack dark:bg-white/10"
+              className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none hover:scale-105 transition cursor-pointer borderBlack"
               href="#contact"
             >
               <Typography>Contact Info</Typography>
             </a>
 
             <a
-              className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none hover:scale-105 transition cursor-pointer borderBlack dark:bg-white/10"
+              // className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none hover:scale-105 transition cursor-pointer borderBlack dark:bg-white/10"
+              className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none hover:scale-105 transition cursor-pointer borderBlack"
               href="/files/ChauNguyen_Resume.pdf"
               download
               onClick={() => window?.open('/files/ChauNguyen_Resume.pdf', '_blank')}
             >
               <Typography>Resume{" "}</Typography>
               <ArrowDownToLine className="opacity-60 transition" style={{ width: '16px', height: '16px' }}/>
-              
             </a>
           </div>
           
