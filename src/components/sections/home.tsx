@@ -72,9 +72,9 @@ const HomeSection = () => {
             <a
               // className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none hover:scale-105 transition cursor-pointer borderBlack dark:bg-white/10"
               className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none hover:scale-105 transition cursor-pointer borderBlack"
-              href="/files/ChauNguyen_Resume.pdf"
+              href="/files/Chau_Nguyen_Resume.pdf"
               download
-              onClick={() => window?.open('/files/ChauNguyen_Resume.pdf', '_blank')}
+              onClick={() => window?.open('/files/Chau_Nguyen_Resume.pdf', '_blank')}
             >
               <Typography>Resume{" "}</Typography>
               <ArrowDownToLine className="opacity-60 transition" style={{ width: '16px', height: '16px' }}/>

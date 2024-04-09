@@ -21,7 +21,7 @@ import LogoStorybook from '/public/images/logos/icon-storybook.svg';
 import LogoGit from '/public/images/logos/icon-git.svg';
 
 import LogoTaperk from '/public/images/logos/logo-taperk.png';
-import LogoGreenApex from '/public/images/logos/logo-greenapex.svg';
+import LogoUSF from '/public/images/logos/logo-usf.png';
 import LogoGreenApexLight from '/public/images/logos/logo-greenapex-light.svg';
 import LogoDotnpixel from '/public/images/logos/logo-dotnpixel.svg';
 import LogoDotnpixelLight from '/public/images/logos/logo-dotnpixel-light.svg';
@@ -179,7 +179,7 @@ export const EXPERIENCES: ExperienceDetails[] = [
   {
     logo: LogoTaperk,
     logoAlt: 'Taperk Logo',
-    position: 'Mobile Developer Intern',
+    position: 'Software Developer Intern',
     startDate: new Date(2023, 8),
     endDate: new Date(2023, 11),
     // currentlyWorkHere: true,
@@ -191,7 +191,7 @@ export const EXPERIENCES: ExperienceDetails[] = [
     ],
   },
   {
-    logo: LogoGreenApex,
+    logo: LogoUSF,
     darkModeLogo: LogoGreenApexLight,
     logoAlt: 'USF Logo',
     position: 'Undergraduate Research Assistant',
@@ -231,7 +231,7 @@ export const PROJECTS: ProjectDetails[] = [
   {
     name: 'GOGO - Your AI Travel Planner',
     description:
-      'A cross-platform mobile app that generates personalized travel itineraries based on user\'s budget and preferences.',
+      'A cross-platform application that generates personalized travel itineraries based on user\'s budget and preferences.',
     url: 'https://devpost.com/software/gogo-your-ai-travel-planner',
     previewImage: ProjectGOGO,
     technologies: [
@@ -258,7 +258,7 @@ export const PROJECTS: ProjectDetails[] = [
       'Full-Stack Development',
       'SQLite',
       'Firebase',
-      'Stripe API',
+      'Stripe',
       'Figma',
     ],
   },
@@ -271,7 +271,6 @@ export const PROJECTS: ProjectDetails[] = [
     technologies: [
       'React.js',
       'TypeScript',
-      'Bootstrap',
       'Material UI',
       'Local Storage',
       'Web Development',

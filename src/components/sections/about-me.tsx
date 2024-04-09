@@ -55,7 +55,7 @@ const AboutMeSection = () => {
             </Typography>
             <Typography>
               Throughout my academic journey, undergraduate research assistance, internship, and hackathons participation,
-              I&apos;ve gained a robust expertise in {" "}
+              I have gained robust expertise in {" "}
               <span className="font-medium">full-stack software development ✨ </span>
               utilizing modern technologies like {" "}
               <span className="italic">React.js, TypeScript, SQL, AWS, Swift, and more. </span>

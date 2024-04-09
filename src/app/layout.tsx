@@ -1,4 +1,5 @@
 import { Inter } from 'next/font/google';
+import { Metadata } from 'next';
 
 import './globals.css';
 import Header from '@/components/layout/header';
@@ -7,6 +8,52 @@ import Footer from '@/components/layout/footer';
 import ActiveSectionContextProvider from '@/context/active-section-context';
 
 const inter = Inter({ subsets: ['latin'] });
+
+const title = 'Chau Nguyen | Personal Portfolio';
+const description =
+  'A Computer Science student looking for Full-time SWE position!';
+const url = 'https://minhchau.me';
+
+export const metadata: Metadata = {
+  metadataBase: new URL(url),
+  title,
+  description,
+  keywords: [
+    'Software Engineer',
+    'Full Stack Developer',
+    'Software Developer',
+    'Mobile Developer',
+  ],
+  creator: 'Chau Nguyen',
+  themeColor: [
+    { media: '(prefers-color-scheme: light)', color: 'white' },
+    { media: '(prefers-color-scheme: dark)', color: 'black' },
+  ],
+  // openGraph: {
+  //   type: 'website',
+  //   url,
+  //   title,
+  //   description,
+  //   siteName: title,
+  //   images: [
+  //     {
+  //       url: '/images/open-graph-chau.png',
+  //     },
+  //   ],
+  // },
+  // twitter: {
+  //   card: 'summary_large_image',
+  //   title,
+  //   description,
+  //   creator: '@ctrbl',
+  //   images: '/images/open-graph-chau.png',
+  // },
+  icons: {
+    icon: '/favicon.ico',
+    shortcut: '/favicon-16x16.png',
+    apple: '/apple-touch-icon.png',
+  },
+};
 
 export default function RootLayout({
   children,
