@@ -184,10 +184,11 @@ export const EXPERIENCES: ExperienceDetails[] = [
     endDate: new Date(2023, 11),
     // currentlyWorkHere: true,
     summary: [
-      'Developed the front end for an iOS and instant app using Swift that redeems store points and rewards for customers via NFC tags and utilized back-end APIs to fetch and process JSON data.',
-      'Reduced the instant app size by 35% by refactoring the codebase and optimizing external libraries and media assets.',
-      'Conducted critical bug analysis by implementing manual testing, resulting in a 20% increase in overall performance.',
-      'Managed the deployment of the app on TestFlight for organization-wide distribution and comprehensive testing.'
+      'Developed the front end for iOS full and instant apps using Swift, enabling customers to accumulate points and redeem rewards at stores with a simple tap via NFC tags. Utilized backend APIs to fetch and process JSON data.',
+      'Improved app response times by 40% by incorporating persistent data storage for unique identifiers.',
+      'Reduced the instant app size by 52% by refactoring the codebase and optimizing external libraries and media assets.',
+      'Conducted critical bug analysis by implementing unit testing, resulting in a 20% increase in app performance.',
+      'Managed the app development using Git version control and deployed it on TestFlight for organizational distribution.'
     ],
   },
   {
@@ -198,8 +199,9 @@ export const EXPERIENCES: ExperienceDetails[] = [
     startDate: new Date(2022, 12),
     endDate: new Date(2023, 4),
     summary: [
-      'Collaborated with a team of 3 to fine-tune GPT-3.5 models using OpenAI API to generate questions about the user’s dietary intake, extract keywords from the dietary conversation, and generate a visualized nutrient intake dashboard.',
-      'Developed a cross-platform mobile app using Flutter with a conversational UI and a RESTful server-side API.',
+      'Collaborated with a team of 3 to fine-tune GPT-3.5 models using OpenAI to generate questions about user dietary intake, extract keywords from dietary conversations, and create personalized nutrition data visualization dashboards.',
+      'Built a cross-platform application (iOS, Android, web) using Flutter with chatbox and voice-assistant interfaces.',
+      'Configured MySQL database server and performed query optimization, enhancing data retrieval efficiency by 35%.'
     ],
   }
 ];
@@ -229,6 +231,22 @@ export const PROJECTS: ProjectDetails[] = [
     ],
   },
   {
+    name: 'Rebye',
+    description:
+      'An iOS consumer-to-consumer e-commerce mobile app that allows users to sell and buy items seamlessly.',
+    url: 'https://github.com/ctrbl/Rebye-App',
+    previewImage: ProjectRebye,
+    technologies: [
+      'Swift',
+      'Objective-C',
+      'Full-Stack Development',
+      'SQLite',
+      'Firebase',
+      'Stripe',
+      'Figma',
+    ],
+  },
+  {
     name: 'GOGO - Your AI Travel Planner',
     description:
       'A cross-platform application that generates personalized travel itineraries based on user\'s budget and preferences.',
@@ -244,22 +262,6 @@ export const PROJECTS: ProjectDetails[] = [
       'Google Cloud Platform',
       'Google Maps API',
       'Postman',
-    ],
-  },
-  {
-    name: 'Rebye',
-    description:
-      'An iOS consumer-to-consumer e-commerce mobile app that allows users to sell and buy items seamlessly.',
-    url: 'https://github.com/ctrbl/Rebye-App',
-    previewImage: ProjectRebye,
-    technologies: [
-      'Swift',
-      'Objective-C',
-      'Full-Stack Development',
-      'SQLite',
-      'Firebase',
-      'Stripe',
-      'Figma',
     ],
   },
   {

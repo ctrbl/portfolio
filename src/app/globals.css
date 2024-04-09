@@ -108,3 +108,7 @@ body {
 .glowing-border-light::after {
   filter: blur(35px);
 }
+
+ul > li {
+  padding-left: 1rem; /* Adjust this value as needed */
+}
