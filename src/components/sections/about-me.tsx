@@ -58,7 +58,7 @@ const AboutMeSection = () => {
               I have gained robust expertise in {" "}
               <span className="font-medium">full-stack software development ✨ </span>
               utilizing modern technologies like {" "}
-              <span className="italic">React.js, TypeScript, SQL, AWS, Swift, and more. </span>
+              <span className="italic">MERN stack, Angular, Next.js, TypeScript, MySQL, AWS, Swift, and more. </span>
             </Typography>
             <Typography>
               Driven by a passion for AI/ML, I aspire to become a software engineer that {" "}
