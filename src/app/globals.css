@@ -109,6 +109,10 @@ body {
   filter: blur(35px);
 }
 
-ul > li {
-  padding-left: 1rem; /* Adjust this value as needed */
+li {
+  list-style-type: circle;
+}
+
+.m {
+  font-weight: 500; 
 }

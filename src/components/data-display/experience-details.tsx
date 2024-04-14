@@ -19,7 +19,7 @@ const ExperienceDetails = ({
   summary,
 }: ExperienceDetailsProps) => {
   return (
-    <Card className="glowing-border mx-auto flex w-full max-w-4xl flex-col justify-between gap-4 p-12 md:flex-col md:gap-8">
+    <Card className="glowing-border mx-auto flex w-full max-w-4xl flex-col justify-between gap-4 p-12 md:gap-8">
       <div className="flex w-full flex-row justify-between">
         <div className="max-md:order-1 md:w-1/4">
           <ImageWrapper
@@ -52,12 +52,16 @@ const ExperienceDetails = ({
         <Typography variant="subtitle" className="font-semibold text-gray-900">
           {position}
         </Typography>
-        <ul className="flex list-disc flex-col gap-2 md:gap-1 ml-4">
-          {summary?.map((sentence, index) => (
-            <Typography component="li" key={index}>
-              {sentence}
-            </Typography>
-          ))}
+        <ul className="flex list-disc text-justify flex-col gap-2 md:gap-1 ml-4 pl-8">
+          {summary?.map((sentence, index) => {
+            const formattedSentence = sentence.replace(/<m>/g, '<span class="m">')
+                                              .replace(/<\/m>/g, '</span>');
+            return(
+              <Typography component="li" className="pl-4" key={index}>
+                <div dangerouslySetInnerHTML={{ __html: formattedSentence }}/>
+              </Typography>
+            );
+          })}
         </ul>
       </div>
       

@@ -184,11 +184,11 @@ export const EXPERIENCES: ExperienceDetails[] = [
     endDate: new Date(2023, 11),
     // currentlyWorkHere: true,
     summary: [
-      'Developed the front end for iOS full and instant apps using Swift, enabling customers to accumulate points and redeem rewards at stores with a simple tap via NFC tags. Utilized backend APIs to fetch and process JSON data.',
-      'Improved app response times by 40% by incorporating persistent data storage for unique identifiers.',
-      'Reduced the instant app size by 52% by refactoring the codebase and optimizing external libraries and media assets.',
-      'Conducted critical bug analysis by implementing unit testing, resulting in a 20% increase in app performance.',
-      'Managed the app development using Git version control and deployed it on TestFlight for organizational distribution.'
+      'Developed the front end for iOS full and instant apps using <m>SwiftUI</m> and <m>Figma</m> for users to accumulate points and redeem rewards at stores via <m>NFC</m> tags. Utilized <m>HTTP</m>-based backend APIs to fetch and process <m>JSON</m> data.',
+      'Improved app response times by <m>40%</m> by incorporating persistent data storage for unique identifiers with <m>Core Data</m>.',
+      'Reduced the app size by <m>52%</m> by using design patterns to optimize UI components, assets, and external libraries.',
+      'Conducted critical bug analysis by implementing unit testing, resulting in a <m>70%</m> increase in app performance.',
+      'Utilized <m>Git</m> for effective version control and coordinated <m>TestFlight</m> deployment for cross-functional collaboration.'
     ],
   },
   {
@@ -199,9 +199,9 @@ export const EXPERIENCES: ExperienceDetails[] = [
     startDate: new Date(2022, 12),
     endDate: new Date(2023, 4),
     summary: [
-      'Collaborated with a team of 3 to fine-tune GPT-3.5 models using OpenAI to generate questions about user dietary intake, extract keywords from dietary conversations, and create personalized nutrition data visualization dashboards.',
-      'Built a cross-platform application (iOS, Android, web) using Flutter with chatbox and voice-assistant interfaces.',
-      'Configured MySQL database server and performed query optimization, enhancing data retrieval efficiency by 35%.'
+      'Collaborated with a team of 3 to fine-tune <m>GPT-3.5</m> models using <m>OpenAI</m> to generate questions about user dietary intake and create nutrition data visualization dashboards by extracting <m>170,000+</m> entries from the USDA database.',
+      'Built a cross-platform application (iOS, Android, web) using <m>Flutter</m> with chatbox and voice-assistant interfaces.',
+      'Configured <m>MySQL</m> database server and performed query optimization, enhancing data retrieval efficiency by <m>65%</m>.'
     ],
   }
 ];

@@ -39,7 +39,7 @@ const HomeSection = () => {
               {inView && (
                 <TypeAnimation
                   sequence={[
-                    "Software Engineer"
+                    "Aspiring Software Engineer"
                   ]}
                   wrapper="span"
                   speed={50}
