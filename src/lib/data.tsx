@@ -30,6 +30,7 @@ import ProjectEmnet from '/public/images/project-emnet.png';
 import ProjectGOGO from '/public/images/project-gogo.png';
 import ProjectRebye from '/public/images/project-rebye.png';
 import ProjectRemindMe from '/public/images/project-remindme.png';
+import ProjectCapitalQuest from 'public/images/capitalquest.gif';
 
 import {
   ExperienceDetails,
@@ -277,6 +278,21 @@ export const PROJECTS: ProjectDetails[] = [
       'Local Storage',
       'Web Development',
       'Figma',
+    ],
+  },
+  {
+    name: 'Capital Quest',
+    description:
+    "A quiz game web application designed to educate users on finance and credit scores.\nAchieved the 'Prettiest Hack' award at the 2022 TechTogether Hackathon. 🏅",
+    url: "https://devpost.com/software/capital-quest",
+    previewImage: ProjectCapitalQuest,
+    technologies: [
+      "Front End Development", "UI/UX",
+      "React.js", 
+      "JavaScript", 
+      "Figma", 
+      "Bootstrap", 
+      "Material UI"
     ],
   },
 ];
